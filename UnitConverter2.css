@@ -1,0 +1,89 @@
+h1 {
+    color: #0088a0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin: 10px 0 50px 0;
+}
+p {
+    color: #0088a0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 2px #0088a0;
+    height: 23px;
+    margin: 10px 4px 0 0;
+    background-color:#ffffff;
+    width: 171px;
+    padding: 0 0 0 2px;
+    font-weight: bold;
+}
+.convert {
+    border: solid 2px #0088a0;
+    color: #0088a0;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.convert:hover {
+    cursor: pointer;
+    background-color: #000b47;
+    border: solid 2px #0088a0;
+    color: #0088a0;
+}
+#container {
+    margin: 0 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+body {
+    background-color: rgb(0, 46, 105);
+}
+#input {
+    border: solid 2px #0088a0;
+    height: 20px;
+}
+.select1 {
+    border: solid 2px #0088a0;
+    border-radius: 15px;
+    height: 25px;
+}
+.select2 {
+    border: solid 2px #0088a0;
+    border-radius: 15px;
+    height: 25px;
+    margin: 10px 0 0 0;
+}
+#changeTheme {
+    background-color: transparent;
+    border: none;
+}
+#changeTheme:hover {
+    cursor: pointer;
+}
+.item {
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+#nightmode {
+    display: none;
+}
+#day {
+    width: 75px;
+    margin: 0 0 0 25px;
+    filter: brightness(150%);
+}
+#day:hover {
+    filter: brightness(200%);
+}
+#result {
+    display: flex;
+}
+.select1:hover {
+    cursor: pointer;
+}
+.select2:hover{
+    cursor: pointer;
+}

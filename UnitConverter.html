@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+        <title>Unit Converter</title>
+        <link href="UnitConverter.css" rel="stylesheet" id="stylesheet">
+    </head>
+    <body>
+        <button onclick="changeTheme()" id="changeTheme" class="item"><img alt="Change Theme" src="\nightmode.png" id="nightmode"><img alt="changeTheme" src="\day.png" id="day"></button>
+        <div id="container">
+            <h1 class="item">Unit Converter</h1>
+            <div id="select">
+                <input type="number" id="input" class="item">
+                <select id="1" class="select1" class="item">
+                    <option value="mm1">mm</option>
+                    <option value="cm1">cm</option>
+                    <option value="dm1">dm</option>
+                    <option value="m1">m</option>
+                    <option value="dam1">dam</option>
+                    <option value="hm1">hm</option>
+                    <option value="km1">km</option>
+                </select>
+                <div id="result">
+                <p id="paragraph" class="item">Result</p>
+                <select id="2" class="select2" class="item">
+                    <option value="mm2">mm</option>
+                    <option value="cm2">cm</option>
+                    <option value="dm2">dm</option>
+                    <option value="m2">m</option>
+                    <option value="dam2">dam</option>
+                    <option value="hm2">hm</option>
+                    <option value="km2">km</option>
+                </select>
+                </div>
+            <br>
+            <button onclick="convert()" class="convert" class="item">Convert</button>
+        </div>
+       <script src="UnitConverter.js"></script>
+    </body>
+</html>
