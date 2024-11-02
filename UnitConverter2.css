@@ -1,35 +1,35 @@
 h1 {
-    color: #0088a0;
+    color: #58e6ffa8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 350%;
     margin: 10px 0 50px 0;
 }
-p {
-    color: #0088a0;
+#paragraph {
+    color: #58e6ffa8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: solid 2px #0088a0;
+    border: solid 2px #58e6ffa8;
     height: 23px;
     margin: 10px 4px 0 0;
-    background-color:#ffffff;
+    background-color:#0088a056;
     width: 171px;
     padding: 0 0 0 2px;
     font-weight: bold;
 }
 .convert {
-    border: solid 2px #0088a0;
-    color: #0088a0;
+    border: solid 2px #58e6ffa8;
+    color: #58e6ffa8;
     border-radius: 30px;
     width: 100px;
     height: 50px;
-    background-color: #ffffff;
+    background-color:#0088a056;
     font-size: 15px;
     font-weight: bold;
 }
 .convert:hover {
     cursor: pointer;
     background-color: #000b47;
-    border: solid 2px #0088a0;
-    color: #0088a0;
+    border: solid 2px #58e6ffa8;
+    color: #58e6ffa8;
 }
 #container {
     margin: 0 0 0 25px;
@@ -37,24 +37,32 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 body {
     background-color: rgb(0, 46, 105);
 }
 #input {
-    border: solid 2px #0088a0;
+    border: solid 2px #58e6ffa8;
     height: 20px;
+    background-color:#0088a056;
+    color: #58e6ffa8;
 }
 .select1 {
-    border: solid 2px #0088a0;
+    border: solid 2px #58e6ffa8;
     border-radius: 15px;
     height: 25px;
+    background-color: #0088a056;
+    color: #000000;
 }
 .select2 {
-    border: solid 2px #0088a0;
+    border: solid 2px #58e6ffa8;
     border-radius: 15px;
     height: 25px;
     margin: 10px 0 0 0;
+    background-color:#0088a056;
+    color: #000000;
 }
 #changeTheme {
     background-color: transparent;
@@ -71,9 +79,11 @@ body {
     display: none;
 }
 #day {
-    width: 75px;
-    margin: 0 0 0 25px;
+    width: 10%;
     filter: brightness(150%);
+    max-width: 125px;
+    min-width: 75px;
+    display: block;
 }
 #day:hover {
     filter: brightness(200%);
@@ -86,4 +96,26 @@ body {
 }
 .select2:hover{
     cursor: pointer;
+}
+.grandezze {
+    border: solid 2px #58e6ffa8;
+    width: 150px;
+    margin: 25px 10px 0 0;
+    color: #58e6ffa8;
+    background-color:#0088a056;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+}
+.a {
+    text-decoration: none;
+    display: inline-block;
+}
+p {
+    font-weight: lighter;
+    color: #58e6ffa8;
+    background-color: #0088a050;
 }

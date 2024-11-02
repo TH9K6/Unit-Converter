@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="English">
+<html lang="it">
     <head>
-        <title>Unit Converter</title>
+        <title>Convertitore</title>
         <link href="UnitConverter.css" rel="stylesheet" id="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital scale=1"> 
     </head>
     <body>
-        <button onclick="changeTheme()" id="changeTheme" class="item"><img alt="Change Theme" src="\nightmode.png" id="nightmode"><img alt="changeTheme" src="\day.png" id="day"></button>
         <div id="container">
-            <h1 class="item">Unit Converter</h1>
+        <button onclick="changeTheme()" id="changeTheme" class="item"><img alt="Change Theme" src="nightmode.png" id="nightmode"><img alt="changeTheme" src="day.png" id="day"></button>
+            <h1 class="item">Convertitore di unità di misura</h1>
             <div id="select">
                 <input type="number" id="input" class="item">
                 <select id="1" class="select1" class="item">
-                    <option value="mm1">mm</option>
-                    <option value="cm1">cm</option>
-                    <option value="dm1">dm</option>
-                    <option value="m1">m</option>
-                    <option value="dam1">dam</option>
-                    <option value="hm1">hm</option>
-                    <option value="km1">km</option>
+                    <option value="mm1" class="length" id="mm1">mm</option>
+                    <option value="cm1" class="length" id="cm1">cm</option>
+                    <option value="dm1" class="length" id="dm1">dm</option>
+                    <option value="m1" class="length" id="m1">m</option>
+                    <option value="dam1" class="length" id="dam1">dam</option>
+                    <option value="hm1" class="length" id="hm1">hm</option>
+                    <option value="km1" class="length" id="km1">km</option>
                 </select>
                 <div id="result">
-                <p id="paragraph" class="item">Result</p>
+                <p id="paragraph" class="item">Risultato</p>
                 <select id="2" class="select2" class="item">
-                    <option value="mm2">mm</option>
-                    <option value="cm2">cm</option>
-                    <option value="dm2">dm</option>
-                    <option value="m2">m</option>
-                    <option value="dam2">dam</option>
-                    <option value="hm2">hm</option>
-                    <option value="km2">km</option>
+                    <option value="mm2" class="length" id="mm2">mm</option>
+                    <option value="cm2" class="length" id="cm2">cm</option>
+                    <option value="dm2" class="length" id="dm2">dm</option>
+                    <option value="m2" class="length" id="m2">m</option>
+                    <option value="dam2" class="length" id="dam2">dam</option>
+                    <option value="hm2" class="length" id="hm2">hm</option>
+                    <option value="km2" class="length" id="km2">km</option>
                 </select>
                 </div>
             <br>
-            <button onclick="convert()" class="convert" class="item">Convert</button>
+            <button onclick="convert()" class="convert" class="item">Converti</button>
+            <br>
+            <a href="UnitConverter.html" class="grandezze">Lunghezza</a>
+            <a href="UnitConverterTemperature.html" class="grandezze">Temperatura</a>
+            <a href="UnitConverterMass.html" class="grandezze">Massa</a>
+            <a href="UnitConverterTime.html" class="grandezze">Tempo</a>
         </div>
-       <script src="UnitConverter.js"></script>
+        <p>es. 2e-8 si legge 2x10^-8</p>    
+    <script src="UnitConverter.js"></script>
     </body>
 </html>

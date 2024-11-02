@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Convertitore</title>
+        <link href="UnitConverter.css" rel="stylesheet" id="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+        <button onclick="changeTheme()" id="changeTheme" class="item"><img alt="Change Theme" src="nightmode.png" id="nightmode"><img alt="changeTheme" src="day.png" id="day"></button>
+            <h1 class="item">Convertitore di unità di misura</h1>
+            <div id="select">
+                <input type="number" id="input" class="item">
+                <select id="1" class="select1" class="item">
+                    <option value="ms1">ms</option>
+                    <option value="cs1">cs</option>
+                    <option value="ds1">ds</option>
+                    <option value="s1">s</option>
+                    <option value="min1">min</option>
+                    <option value="h1">h</option>
+                    <option value="day1">day(s)</option>
+                    <option value="week1">week(s)</option>
+                    <option value="month1">month(s)</option>
+                    <option value="year1">year(s)</option>
+                </select>
+                <div id="result">
+                <p id="paragraph" class="item">Risultato</p>
+                <select id="2" class="select2" class="item">
+                    <option value="ms2">ms</option>
+                    <option value="cs2">cs</option>
+                    <option value="ds2">ds</option>
+                    <option value="s2">s</option>
+                    <option value="min2">min</option>
+                    <option value="h2">h</option>
+                    <option value="day2">day(s)</option>
+                    <option value="week2">week(s)</option>
+                    <option value="month2">month(s)</option>
+                    <option value="year2">year(s)</option>
+                </select>
+                </div>
+            <br>
+            <button onclick="convert()" class="convert" class="item">Converti</button>
+            <br>
+                <a href="UnitConverter.html" class="grandezze">Lunghezza</a>
+                <a href="UnitConverterTemperature.html" class="grandezze">Temperatura<a>
+                <a href="UnitConverterMass.html" class="grandezze">Massa</a>
+                <a href="UnitConverterTime.html" class="grandezze">Tempo</a>
+            </div>
+        <p>es. 2e-8 si legge 2x10^-8</p>
+        <p>I risultati sono arrotondati al secondo decimale</p>
+       <script src="UnitConverterTime.js"></script>
+    </body>
+</html>

@@ -1,5 +1,5 @@
 function convert() {
-    const input = document.getElementById("input");
+const input = document.getElementById("input");
 const inputValue = input.value;
 const lengthOne = document.getElementById("1");
 const lengthOneValue = lengthOne.value;
@@ -53,10 +53,10 @@ if (lengthTwoValue === "mm2") {
 }
 }
 function changeTheme() {
-    let CSSlink = document.getElementById("stylesheet").href;
-    if (CSSlink === "http://127.0.0.1:3000/UnitConverter.css") {
-        document.getElementById("stylesheet").href = "UnitConverter2.css";
+    let CSSlink = document.querySelector("#stylesheet");
+    if (CSSlink.href.includes("UnitConverter.css")) {
+        CSSlink.href = "UnitConverter2.css";
     } else {
-        document.getElementById("stylesheet").href = "UnitConverter.css";
+        CSSlink.href = "UnitConverter.css";
     }
 }
